@@ -10,7 +10,7 @@ export default function Navbar() {
             Student Management System
           </Link>
           
-          <Link className="btn btn-outline-light" to="/AddStudent">
+          <Link className="btn btn-outline-light" to="/addstudent">
             Add Student
           </Link>
         </div>
