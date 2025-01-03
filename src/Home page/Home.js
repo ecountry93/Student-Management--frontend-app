@@ -13,7 +13,7 @@ export default function Home() {
 
   const loadStudents = async () => {
 
-    const result = await axios.get("http://localhost:8081/students")
+    const result = await axios.get("http://localhost:8081/")
     setStudents(result.data)
     
   };
@@ -25,7 +25,7 @@ export default function Home() {
       "Delete this item?"
     )
     )
-    await axios.delete(`http://localhost:8081/delete/${id}`);
+    await axios.delete(`http://localhost:8081/${id}`);
     loadStudents();
   };
 
