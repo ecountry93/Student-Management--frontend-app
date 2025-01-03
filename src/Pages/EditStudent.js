@@ -21,7 +21,7 @@ export default function EditStudent() {
   };
 
 const loadStudent = async (id) => {
-    await axios.get (`http://localhost:8081/find/${id}`)
+    await axios.get (`http://localhost:8081/${id}`)
     .then(response => setStudent(response.data))
     .catch(error => console.log(error));
    // setStudent(result.data);
