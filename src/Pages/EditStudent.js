@@ -34,7 +34,7 @@ const loadStudent = async (id) => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:8081/update/${id}`, student);
+    await axios.put(`http://localhost:8081/${id}`, student);
     navigate("/");
   };
 
