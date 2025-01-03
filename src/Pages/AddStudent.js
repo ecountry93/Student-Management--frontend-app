@@ -19,7 +19,7 @@ export default function AddStudent() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8081/create", student);
+    await axios.post("http://localhost:8081/", student);
     navigate("/");
   };
 
